@@ -1,0 +1,27 @@
+/* ==========================================================================
+   GLOBAL RESPONSIVE RULES
+   Section-specific breakpoints live in each section's own file. This file
+   only holds the shared, cross-cutting responsive behavior: container
+   padding and the base type scale used by .section-title / .section-subtitle.
+   ========================================================================== */
+
+@media (max-width: 1100px) {
+  .cont {
+    padding: 0 28px;
+  }
+}
+
+@media (max-width: 640px) {
+  .cont {
+    padding: 0 20px;
+  }
+
+  :root {
+    --fs-section: 30px;
+    --fs-sub: 18px;
+  }
+
+  .section-head {
+    margin-bottom: 44px;
+  }
+}

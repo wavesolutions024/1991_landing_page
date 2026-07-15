@@ -1,0 +1,71 @@
+import { useEffect, useState } from "react";
+import "../styles/header.scss";
+
+const NAV_LINKS = [
+  { label: "Work", href: "#gallery" },
+  { label: "Services", href: "#services" },
+  { label: "Studio", href: "#why-us" },
+  { label: "Reviews", href: "#reviews" },
+  { label: "FAQ", href: "#faq" },
+];
+
+function Header() {
+  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  
+
+  return (
+    <header className={`header ${scrolled ? "header--scrolled" : ""}`}>
+      <div className="cont header__inner">
+        <a href="#top" className="header__logo">
+          Obscura <span>Ink</span>
+        </a>
+
+        <nav className={`header__nav ${menuOpen ? "is-open" : ""}`}>
+          {NAV_LINKS.map((link) => (
+            <a
+              key={link.label}
+              href={link.href}
+              onClick={() => setMenuOpen(false)}
+            >
+              {link.label}
+            </a>
+          ))}
+          <a
+            href="#cta"
+            className="primarybtn header__nav-cta"
+            onClick={(e) => {
+              e.preventDefault();
+              window.dispatchEvent(new CustomEvent('openConsultationModal'));
+              setMenuOpen(false);
+            }}
+            aria-haspopup="dialog"
+          >
+            Book Consultation
+          </a>
+        </nav>
+
+        <button
+          type="button"
+          className={`header__burger ${menuOpen ? "is-open" : ""}`}
+          aria-label="Toggle menu"
+          aria-expanded={menuOpen}
+          onClick={() => setMenuOpen((v) => !v)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+      </div>
+    </header>
+  );
+}
+
+export default Header;
