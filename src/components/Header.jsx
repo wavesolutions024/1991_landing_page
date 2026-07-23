@@ -3,7 +3,7 @@ import "../styles/header.scss";
 
 const NAV_LINKS = [
   { label: "Services", href: "#services" },
-  { label: "Body piercing", href: "#Body piercing" },
+  { label: "Body piercing", href: "#piercing" },
   { label: "Gallery", href: "#gallery" },
   { label: "FAQ", href: "#faq" },
   { label: "Why Choose us", href: "#why-us" },
