@@ -6,7 +6,7 @@ const NAV_LINKS = [
   { label: "Body piercing", href: "#Body piercing" },
   { label: "Gallery", href: "#gallery" },
   { label: "FAQ", href: "#faq" },
-  { label: "Studio", href: "#why-us" },
+  { label: "Why Choose us", href: "#why-us" },
 ];
 
 function Header() {
