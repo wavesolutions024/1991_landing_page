@@ -1,62 +1,136 @@
 .footer {
-  padding: 70px 0 40px;
-  background: var(--black);
+  background: var(--surface);
+  padding: 90px 0 35px;
+  border-top: 1px solid var(--line);
 
   &__top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 24px;
+    display: grid;
+    grid-template-columns: 1.3fr repeat(3, 1fr);
+    gap: 70px;
+    padding-bottom: 60px;
   }
 
   &__logo {
-    font-size: 22px;
+    display: inline-block;
+    margin-bottom: 22px;
+    font-size: 30px;
     font-weight: 700;
     color: var(--white);
+    letter-spacing: .04em;
 
     span {
       color: var(--gold);
-      font-style: italic;
-      font-weight: 500;
     }
+  }
+
+  &__about {
+
+    p {
+      max-width: 320px;
+      color: var(--grey);
+      line-height: 1.9;
+      font-size: 15px;
+    }
+
   }
 
   &__links {
-    display: flex;
-    gap: 34px;
+
+    h4 {
+      color: var(--gold);
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: .18em;
+      margin-bottom: 28px;
+      font-weight: 600;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
 
     a {
-      font-size: 14px;
       color: var(--grey);
       transition: var(--transition);
+      position: relative;
+      width: fit-content;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        width: 0;
+        height: 1px;
+        background: var(--gold);
+        transition: .35s;
+      }
 
       &:hover {
-        color: var(--gold);
+        color: var(--white);
+      }
+
+      &:hover::after {
+        width: 100%;
       }
     }
-  }
 
-  .ink-divider {
-    margin: 40px 0 28px;
   }
 
   &__bottom {
+    border-top: 1px solid var(--line);
+    padding-top: 28px;
+
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 10px;
-    font-size: 12.5px;
-    color: var(--grey);
+    align-items: center;
+    gap: 20px;
+
+    p {
+      color: var(--grey);
+      font-size: 14px;
+    }
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width:640px) {
+
   .footer {
+
+    padding: 70px 0 30px;
+
+    &__top {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      text-align: center;
+    }
+
+    &__about {
+
+      p {
+        max-width: 100%;
+        margin: 0 auto;
+      }
+
+    }
+
+    &__links {
+
+      ul {
+        align-items: center;
+      }
+
+    }
+
     &__bottom {
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
+      text-align: center;
+      gap: 12px;
     }
+
   }
+
 }

@@ -3,33 +3,33 @@ import '../styles/services.scss';
 
 const SERVICES = [
   {
-    name: 'Portrait Tattoo',
-    desc: 'Faces, likenesses and memorials rendered with true tonal depth.',
+    name: 'Realism',
+    desc: ' Portraits, wildlife, and photographic detail rendered in black-and-grey or full color.',
     img: 'https://images.unsplash.com/photo-1590246814883-57c511e76523?q=80&w=900&auto=format&fit=crop',
   },
   {
-    name: 'Minimal Tattoo',
-    desc: 'Fine single-needle line work — quiet, precise, built to last.',
+    name: 'Fine Line',
+    desc: 'Delicate single-needle linework — minimalist florals, script, and micro-tattoos.',
     img: 'https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?q=80&w=900&auto=format&fit=crop',
   },
   {
-    name: 'Realistic Tattoo',
-    desc: 'Photo-grade shading and texture for skin that reads like a photograph.',
+    name: 'Blackwork & Dotwork',
+    desc: ' Bold graphic blackwork, geometric patterns, and stippled dotwork shading.',
     img: 'https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?q=80&w=900&auto=format&fit=crop',
   },
   {
     name: 'Cover Up',
-    desc: 'Rework old pieces into something you want to show, not hide.',
+    desc: ' Full reconstruction of old, faded, or unwanted tattoos into new, deliberate pieces.',
     img: 'https://images.unsplash.com/photo-1552693673-1bf958298935?q=80&w=900&auto=format&fit=crop',
   },
   {
-    name: 'Sleeves',
-    desc: 'Full-arm compositions planned across multiple sessions for flow.',
+    name: 'Touch-Ups & Restoration',
+    desc: ' Color refresh and line restoration for tattoos that have faded over time.',
     img: 'https://images.unsplash.com/photo-1565058379802-bbe93b2f703a?q=80&w=900&auto=format&fit=crop',
   },
   {
-    name: 'Custom Design',
-    desc: 'An original piece drawn around your story — nothing off a wall.',
+    name: 'Custom Illustration',
+    desc: 'Original concept design built around your reference, story, and placement.',
     img: 'https://images.unsplash.com/photo-1542728928-1413d1894ed1?q=80&w=900&auto=format&fit=crop',
   },
 ];
@@ -41,13 +41,14 @@ function Services() {
     <section className="services parent" id="services">
       <div className="cont">
         <div ref={headRef} className="section-head reveal">
-          <p className="eyebrow">What We Tattoo</p>
+          <p className="eyebrow">SERVICES</p>
           <h2 className="section-title">
-            Six disciplines. <span>One standard.</span>
+            Tattoo work, done <span> deliberately.</span>
           </h2>
           <p className="section-subtitle">
-            Every category below is handled by the same artist, start to
-            finish — so the linework, saturation and healing all match.
+            From a single fine line to a full sleeve reconstruction,
+            each service below is scoped in a free consultation before
+            anything touches skin.
           </p>
         </div>
 

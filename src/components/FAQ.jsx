@@ -4,24 +4,32 @@ import '../styles/faq.scss';
 
 const FAQS = [
   {
-    q: 'How far in advance should I book?',
-    a: 'For custom pieces and sleeves, 3–5 weeks. Smaller minimal pieces can sometimes be scheduled within 1–2 weeks depending on the calendar.',
+    q: 'Do you take walk-ins?',
+    a: "No. Obscura Ink is appointment-only. Every session — tattoo or piercing — starts with a consultation so we can scope the design, placement, and timing properly before you're in the chair.",
   },
   {
-    q: 'Do you require a consultation before booking?',
-    a: 'Yes. Every custom or cover-up project starts with a short in-person or video consultation so we can plan placement, size and the number of sessions needed.',
+    q: 'How does the consultation work?',
+    a: "Book through the form on this site or the popup booking window. We'll confirm a slot, talk through references and placement, and give you a written quote before anything is scheduled.",
   },
   {
-    q: 'What should I do before my appointment?',
-    a: 'Sleep well, eat beforehand, stay hydrated, and avoid alcohol for 24 hours. Arrive with the area clean and unshaved if it\u2019s a sensitive spot.',
+    q: 'Is a deposit required?',
+    a: "Yes. A deposit secures your appointment date and is deducted from the final price of your tattoo or piercing. Deposits are non-refundable on missed appointments with less than 48 hours' notice.",
   },
   {
-    q: 'How does aftercare work?',
-    a: 'You will leave with written aftercare instructions and a recommended balm. We also check in around day 3 and day 10 of healing.',
+    q: "What's the minimum age?",
+    a: "18 and older for all tattoo and piercing services, with valid government-issued ID required at your appointment. We do not tattoo or pierce minors, even with parental consent.",
   },
   {
-    q: 'Can you cover an existing tattoo?',
-    a: 'In most cases, yes. Bring a photo to your consultation and we will advise honestly on what is achievable and how it may need to be resized or darkened.',
+    q: 'How should I prepare before my appointment?',
+    a: "Sleep well, eat beforehand, stay hydrated, and avoid alcohol for 24 hours prior. Wear clothing that gives easy access to the area being tattooed or pierced.",
+  },
+  {
+    q: "What's your aftercare process?",
+    a: "You'll receive written aftercare instructions after every session, plus a free follow-up check-in as your tattoo or piercing heals. We're reachable by phone or email if anything looks off.",
+  },
+  {
+    q: 'Do you do cover-ups on old or faded tattoos?',
+    a: "Yes — cover-up reconstruction is one of our core specialties. Bring photos of the existing tattoo to your consultation so we can assess size, ink saturation, and design options.",
   },
 ];
 
@@ -33,10 +41,13 @@ function FAQ() {
     <section className="faq parent" id="faq">
       <div className="cont">
         <div ref={headRef} className="section-head reveal">
-          <p className="eyebrow">Good to Know</p>
+          <p className="eyebrow">FAQ</p>
           <h2 className="section-title">
-            Frequently asked <span>questions.</span>
+           Questions, answered.
           </h2>
+          <p>The most common things people ask before booking a tattoo 
+            or piercing consultation.
+          </p>
         </div>
 
         <div className="faq__list">

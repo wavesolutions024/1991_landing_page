@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 import "../styles/header.scss";
 
 const NAV_LINKS = [
-  { label: "Work", href: "#gallery" },
   { label: "Services", href: "#services" },
-  { label: "Studio", href: "#why-us" },
-  { label: "Reviews", href: "#reviews" },
+  { label: "Body piercing", href: "#Body piercing" },
+  { label: "Gallery", href: "#gallery" },
   { label: "FAQ", href: "#faq" },
+  { label: "Studio", href: "#why-us" },
 ];
 
 function Header() {

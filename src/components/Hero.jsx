@@ -25,15 +25,16 @@ function Hero() {
         </p>
 
         <h1 ref={headingRef} className="hero__heading reveal reveal-delay-1">
-          Tattoos built to
+          Skin is the
           <br />
-          look <span>real</span>, age <span>well</span>.
+          <span>last honest </span>canvas.
         </h1>
 
         <p ref={subRef} className="hero__sub reveal reveal-delay-2">
-          Obscura Ink is a two-chair studio in the city center focused on
-          realism, fine line and cover-up work — one artist, one client, one
-          session at a time.
+          Obscura Ink is a private, appointment-only studio in the heart
+          of the city, specializing in hyper-realism, fine line work,
+          cover-ups, and precision body piercing. One artist, one client,
+          one chair at a time.
         </p>
 
         <div ref={ctaRef} className="hero__cta reveal reveal-delay-3">
@@ -54,22 +55,26 @@ function Hero() {
             rel="noreferrer"
             className="outlinebtn"
           >
-            Chat on WhatsApp
+            VIEW PORTFOLIO
           </a>
         </div>
 
         <div ref={statsRef} className="hero__stats reveal reveal-delay-4">
           <div>
-            <strong>9 yrs</strong>
-            <span>In realism &amp; portrait work</span>
+            <strong>12+</strong>
+            <span>YEARS TATTOOING</span>
           </div>
           <div>
-            <strong>1,200+</strong>
+            <strong>3,400+</strong>
             <span>Sessions completed</span>
           </div>
           <div>
-            <strong>4.9 / 5</strong>
-            <span>From 310 client reviews</span>
+            <strong>4</strong>
+            <span>RESIDENT ARTISTS</span>
+          </div>
+          <div>
+            <strong>100%</strong>
+            <span>STERILE, SINGLE-USE SETUP</span>
           </div>
         </div>
       </div>

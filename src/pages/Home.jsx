@@ -1,6 +1,8 @@
 import Header from '../components/Header.jsx';
 import Hero from '../components/Hero.jsx';
+import Studio from '../components/Studio.jsx';
 import Services from '../components/Services.jsx';
+import Piercing from '../components/Piercing.jsx';
 import WhyChooseUs from '../components/WhyChooseUs.jsx';
 import Gallery from '../components/Gallery.jsx';
 import BeforeAfter from '../components/BeforeAfter.jsx';
@@ -16,10 +18,12 @@ function Home() {
       <Header />
       <main>
         <Hero />
+        <Studio/>
         <Services />
+        <Piercing/>
         <WhyChooseUs />
         <Gallery />
-        <BeforeAfter />
+         {/*<BeforeAfter />*/}
         <Reviews />
         <FAQ />
         <CTA />

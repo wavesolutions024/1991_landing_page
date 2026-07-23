@@ -1,44 +1,95 @@
 import useReveal from '../hooks/useReveal.js';
 import '../styles/footer.scss';
 
-function Footer() {
-  const year = new Date().getFullYear();
-  const dividerRef = useReveal();
-
+const Footer = () => {
   return (
     <footer className="footer parent">
       <div className="cont">
+
         <div className="footer__top">
-          <a href="#top" className="footer__logo">
-            Obscura <span>Ink</span>
-          </a>
+
+          <div className="footer__about">
+
+            <a href="/" className="footer__logo">
+              OBSCURA <span>INK</span>
+            </a>
+
+            <p>
+              Private, appointment-only tattoo and piercing
+              studio. Realism, fine line, cover-ups,
+              and precision piercing.
+            </p>
+
+          </div>
 
           <div className="footer__links">
-            <a href="https://instagram.com" target="_blank" rel="noreferrer">
-              Instagram
-            </a>
-            <a href="https://wa.me/15551234567" target="_blank" rel="noreferrer">
-              WhatsApp
-            </a>
-            <a href="mailto:studio@obscurainkco.com">Email</a>
-          </div>
-        </div>
 
-        <div ref={dividerRef} className="ink-divider">
-          <span className="ink-divider__needle">
-            <svg viewBox="0 0 400 8" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-              <line x1="0" y1="4" x2="400" y2="4" stroke="var(--gold)" strokeWidth="1.4" />
-            </svg>
-          </span>
+            <h4>Explore</h4>
+
+            <ul>
+
+              <li><a href="/">Why Choose Us</a></li>
+
+              <li><a href="/">Services</a></li>
+
+              <li><a href="/">Body Piercing</a></li>
+
+              <li><a href="/">Gallery</a></li>
+
+            </ul>
+
+          </div>
+
+          <div className="footer__links">
+
+            <h4>Studio</h4>
+
+            <ul>
+
+              <li><a href="/">Book a Consultation</a></li>
+
+              <li><a href="/">Aftercare Guide</a></li>
+
+              <li><a href="/">Gift Cards</a></li>
+
+            </ul>
+
+          </div>
+
+          <div className="footer__links">
+
+            <h4>Follow</h4>
+
+            <ul>
+
+              <li><a href="/">Instagram</a></li>
+
+              <li><a href="/">Pinterest</a></li>
+
+              <li><a href="/">Google Reviews</a></li>
+
+            </ul>
+
+          </div>
+
         </div>
 
         <div className="footer__bottom">
-          <p>&copy; {year} Obscura Ink Tattoo Studio. All rights reserved.</p>
-          <p>18 Marlowe Street, Studio 3 — By appointment only.</p>
+
+          <p>
+            © 2026 Obscura Ink Studio. All rights reserved.
+          </p>
+
+          <p>
+            Licensed body art facility • 18+ only
+          </p>
+
         </div>
+
       </div>
+
     </footer>
   );
-}
+};
 
 export default Footer;

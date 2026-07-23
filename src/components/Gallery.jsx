@@ -28,9 +28,11 @@ function Gallery() {
     <section className="gallery parent" id="gallery">
       <div className="cont">
         <div ref={headRef} className="section-head reveal">
-          <p className="eyebrow">Recent Work</p>
+          <p className="eyebrow">GALLERY</p>
+          <h1>Recent work.</h1>
           <h2 className="section-title">
-            A studio wall, <span>digitized.</span>
+            A small selection from the studio floor — full portfolio
+            available on request during your consultation.
           </h2>
         </div>
       </div>

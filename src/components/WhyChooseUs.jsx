@@ -3,32 +3,39 @@ import '../styles/whychooseus.scss';
 
 const REASONS = [
   {
-    title: '9 Years Experience',
-    desc: 'Nearly a decade focused specifically on realism and portrait work.',
+    title: 'Private, Appointment-Only',
+    desc: 'No walk-ins, no flash-wall queue — your session is booked, scoped, and yours alone.',
     icon: (
       <path d="M12 2 3 6v6c0 5 3.8 8.4 9 10 5.2-1.6 9-5 9-10V6l-9-4Z" />
     ),
   },
   {
-    title: 'Sterile Studio',
-    desc: 'Hospital-grade sterilization and single-use needles, every session.',
+    title: 'Licensed & Sterile',
+    desc: 'Autoclave sterilization, single-use needles, and full compliance inspection records on request.',
     icon: (
       <path d="M9 2h6v5.2l4 6.8a4 4 0 0 1-3.4 6H8.4A4 4 0 0 1 5 13l4-6.8V2Z" />
     ),
   },
   {
-    title: 'Certified Artist',
-    desc: 'Licensed and insured, with ongoing training in bloodborne pathogens.',
+    title: 'Portfolio-Proven Artists',
+    desc: 'Every resident artist is chosen for a specific specialty — realism, linework, or cover-up reconstruction.',
     icon: <path d="m12 3 8 4v5c0 5-3.4 8-8 9-4.6-1-8-4-8-9V7l8-4Z" />,
   },
   {
-    title: 'Premium Ink',
-    desc: 'Vegan, EU-compliant pigments chosen for long-term color retention.',
+    title: 'Custom Design Process',
+    desc: 'No pre-drawn flash sheets for custom work — every large piece is drawn from your reference and story.',
     icon: <path d="M12 2c3 4 6 7.6 6 11.2A6 6 0 0 1 6 13.2C6 9.6 9 6 12 2Z" />,
   },
   {
-    title: 'Personal Consultation',
-    desc: 'Every piece starts with a 1-on-1 sit-down before any ink touches skin.',
+    title: 'Transparent Pricing',
+    desc: 'Hourly and flat-rate quotes are confirmed in writing before your appointment is booked.',
+    icon: (
+      <path d="M4 4h16v11H8l-4 4V4Z" />
+    ),
+  },
+  {
+    title: 'Real Aftercare Support',
+    desc: 'A written aftercare guide and a free follow-up check on every tattoo and piercing.',
     icon: (
       <path d="M4 4h16v11H8l-4 4V4Z" />
     ),
@@ -44,11 +51,11 @@ function WhyChooseUs() {
         <div ref={headRef} className="section-head section-head--center reveal">
           <p className="eyebrow">Why Choose Us</p>
           <h2 className="section-title">
-            The details you <span>don&apos;t see</span> matter most.
+            What you're actually booking.
           </h2>
           <p className="section-subtitle">
-            A great tattoo is a combination of craft and care — here&apos;s
-            what we hold ourselves to on both sides of the needle.
+            Not another walk-in shop. Here's what sets an appointment
+            at our studio apart.
           </p>
         </div>
 

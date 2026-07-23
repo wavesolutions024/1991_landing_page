@@ -3,24 +3,24 @@ import '../styles/reviews.scss';
 
 const REVIEWS = [
   {
-    name: 'Maria Fontaine',
-    role: 'Portrait sleeve, 4 sessions',
+    name: '— R. MALHOTRA',
+    role: 'COVER-UP CLIENT',
     quote:
-      'The consultation alone felt more thorough than any studio I had been to before. The linework on my grandmother\u2019s portrait still looks sharp two years later.',
+      'Booked a consultation expecting a sales pitch, got an actual design conversation instead. The cover-up completely erased fifteen years of regret.',
     avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop',
   },
   {
-    name: 'Daniel Cho',
-    role: 'Cover-up, forearm',
+    name: '— A. FERNANDES',
+    role: 'PIERCING CLIENT',
     quote:
-      'I had a piece I regretted for a decade. They redesigned it entirely and it healed cleaner than my first tattoo ever did.',
+      'My septum was pierced by someone who explained every step before doing it. No piercing gun, no rush, healed clean in six weeks.',
     avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop',
   },
   {
-    name: 'Priya Nair',
-    role: 'Minimal line work',
+    name: '— S. IYER',
+    role: 'REALISM CLIENT',
     quote:
-      'Booked with my partner for matching pieces. Calm studio, no pressure, and the aftercare guidance actually worked.',
+      'The realism work on my forearm looks more like the reference photo than I thought possible. Worth every appointment it took to get booked.',
     avatar: 'https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=200&auto=format&fit=crop',
   },
 ];
@@ -32,9 +32,9 @@ function Reviews() {
     <section className="reviews parent" id="reviews">
       <div className="cont">
         <div ref={headRef} className="section-head section-head--center reveal">
-          <p className="eyebrow">Client Reviews</p>
+          <p className="eyebrow">CLIENT WORDS</p>
           <h2 className="section-title">
-            310+ clients. <span>One consistent standard.</span>
+            From people in the chair.
           </h2>
         </div>
 
