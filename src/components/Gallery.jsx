@@ -29,11 +29,11 @@ function Gallery() {
       <div className="cont">
         <div ref={headRef} className="section-head reveal">
           <p className="eyebrow">GALLERY</p>
-          <h1>Recent work.</h1>
-          <h2 className="section-title">
+          <h2 className="section-title">Recent work.</h2>
+          <p className="section-subtitle">
             A small selection from the studio floor — full portfolio
             available on request during your consultation.
-          </h2>
+          </p>
         </div>
       </div>
 
