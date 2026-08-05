@@ -97,7 +97,7 @@
 }
 
 .modal__form input,
-.modal__form textarea {
+.modal__form textarea,select {
   width: 100%;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.04);
@@ -105,7 +105,14 @@
   padding: 12px 14px;
   border-radius: 8px;
   margin-top: 6px;
+
+
+  option{
+    color: black;
+  }
 }
+
+
 
 .modal__form textarea { resize: vertical; }
 
