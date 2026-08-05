@@ -46,7 +46,7 @@ function Studio() {
             </h2>
 
             <p>
-              Obscura Ink was founded on a simple idea: tattooing deserves
+              Ink fly was founded on a simple idea: tattooing deserves
               the same focus as any other exacting craft. There's no walk-in
               chaos, no flash-wall pressure, no rush. Every session is booked
               in advance, one client and one artist per room, so the work —

@@ -25,7 +25,7 @@ function Header() {
     <header className={`header ${scrolled ? "header--scrolled" : ""}`}>
       <div className="cont header__inner">
         <a href="#top" className="header__logo">
-          Obscura <span>Ink</span>
+          Ink <span>fly</span>
         </a>
 
         <nav className={`header__nav ${menuOpen ? "is-open" : ""}`}>

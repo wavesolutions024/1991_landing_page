@@ -5,7 +5,7 @@ import '../styles/faq.scss';
 const FAQS = [
   {
     q: 'Do you take walk-ins?',
-    a: "No. Obscura Ink is appointment-only. Every session — tattoo or piercing — starts with a consultation so we can scope the design, placement, and timing properly before you're in the chair.",
+    a: "No. Ink fly is appointment-only. Every session — tattoo or piercing — starts with a consultation so we can scope the design, placement, and timing properly before you're in the chair.",
   },
   {
     q: 'How does the consultation work?',

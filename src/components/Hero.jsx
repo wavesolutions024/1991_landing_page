@@ -31,7 +31,7 @@ function Hero() {
         </h1>
 
         <p ref={subRef} className="hero__sub reveal reveal-delay-2">
-          Obscura Ink is a private, appointment-only studio in the heart
+          Ink fly is a private, appointment-only studio in the heart
           of the city, specializing in hyper-realism, fine line work,
           cover-ups, and precision body piercing. One artist, one client,
           one chair at a time.

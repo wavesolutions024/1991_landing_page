@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="footer__about">
 
             <a href="/" className="footer__logo">
-              OBSCURA <span>INK</span>
+              Ink <span>fly</span>
             </a>
 
             <p>
@@ -77,7 +77,7 @@ const Footer = () => {
         <div className="footer__bottom">
 
           <p>
-            © 2026 Obscura Ink Studio. All rights reserved.
+            © 2026 Ink fly Studio. All rights reserved.
           </p>
 
           <p>
