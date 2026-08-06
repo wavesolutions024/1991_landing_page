@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "../styles/header.scss";
+import logo from "../assets/logo.jpeg";
 
 const NAV_LINKS = [
   { label: "Services", href: "#services" },
@@ -24,9 +25,10 @@ function Header() {
   return (
     <header className={`header ${scrolled ? "header--scrolled" : ""}`}>
       <div className="cont header__inner">
-        <a href="#top" className="header__logo">
+        {/* <a href="#top" className="header__logo">
           Ink <span>fly</span>
-        </a>
+        </a> */}
+        <img src={logo} alt="Ink fly Logo" />
 
         <nav className={`header__nav ${menuOpen ? "is-open" : ""}`}>
           {NAV_LINKS.map((link) => (

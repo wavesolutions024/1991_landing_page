@@ -1,5 +1,6 @@
 import useReveal from '../hooks/useReveal.js';
 import '../styles/footer.scss';
+import logo from "../assets/logo.jpeg";
 
 const Footer = () => {
   return (
@@ -10,9 +11,10 @@ const Footer = () => {
 
           <div className="footer__about">
 
-            <a href="/" className="footer__logo">
+            {/* <a href="/" className="footer__logo">
               Ink <span>fly</span>
-            </a>
+            </a> */}
+            <img src={logo} alt="Ink fly Logo" />
 
             <p>
               Private, appointment-only tattoo and piercing
@@ -28,13 +30,13 @@ const Footer = () => {
 
             <ul>
 
-              <li><a href="/">Why Choose Us</a></li>
+              <li><a href="#why-us">Why Choose Us</a></li>
 
-              <li><a href="/">Services</a></li>
+              <li><a href="#services">Services</a></li>
 
-              <li><a href="/">Body Piercing</a></li>
+              <li><a href="#piercing">Body Piercing</a></li>
 
-              <li><a href="/">Gallery</a></li>
+              <li><a href="#gallery">Gallery</a></li>
 
             </ul>
 
@@ -48,9 +50,9 @@ const Footer = () => {
 
               <li><a href="/">Book a Consultation</a></li>
 
-              <li><a href="/">Aftercare Guide</a></li>
+              <li><a href="#gallery">Recent work</a></li>
 
-              <li><a href="/">Gift Cards</a></li>
+              {/* <li><a href="/">Gift Cards</a></li> */}
 
             </ul>
 
@@ -62,7 +64,7 @@ const Footer = () => {
 
             <ul>
 
-              <li><a href="/">Instagram</a></li>
+              <li><a href="https://www.instagram.com/inkflytattoopune?igsh=c2Nvb3g4amFlMHhj">Instagram</a></li>
 
               <li><a href="/">Pinterest</a></li>
 
