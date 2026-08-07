@@ -48,9 +48,9 @@ const Footer = () => {
 
             <ul>
 
-              <li><a href="/">Book a Consultation</a></li>
+              <li><a href="#studio">About Us</a></li>
 
-              <li><a href="#gallery">Recent work</a></li>
+              {/* <li><a href="#gallery">Recent work</a></li> */}
 
               {/* <li><a href="/">Gift Cards</a></li> */}
 
@@ -66,9 +66,9 @@ const Footer = () => {
 
               <li><a href="https://www.instagram.com/inkflytattoopune?igsh=c2Nvb3g4amFlMHhj">Instagram</a></li>
 
-              <li><a href="/">Pinterest</a></li>
+              {/* <li><a href="/">Pinterest</a></li>
 
-              <li><a href="/">Google Reviews</a></li>
+              <li><a href="/">Google Reviews</a></li> */}
 
             </ul>
 
