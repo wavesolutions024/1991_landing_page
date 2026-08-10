@@ -61,7 +61,7 @@ function ReviewCard({ review, index }) {
       </div>
       <p className="review-card__quote">&ldquo;{review.quote}&rdquo;</p>
       <div className="review-card__author">
-        <img className="bg-img-cover" src={review.avatar} alt={review.name} loading="lazy" />
+        {/* <img className="bg-img-cover" src={review.avatar} alt={review.name} loading="lazy" /> */}
         <div>
           <strong>{review.name}</strong>
           <span>{review.role}</span>

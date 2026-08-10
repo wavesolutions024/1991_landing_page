@@ -1,36 +1,42 @@
 import useReveal from '../hooks/useReveal.js';
 import '../styles/services.scss';
+import img1 from "../assets/imag1.png";
+import img2 from "../assets/image6.png";
+import img3 from "../assets/cover-up.jpg";
+import img4 from "../assets/touch-up.webp";
+import img5 from "../assets/pericing.webp";
+import img6 from "../assets/consultation.webp";
 
 const SERVICES = [
   {
-    name: 'Realism',
-    desc: ' Portraits, wildlife, and photographic detail rendered in black-and-grey or full color.',
-    img: 'https://images.unsplash.com/photo-1590246814883-57c511e76523?q=80&w=900&auto=format&fit=crop',
+    name: 'Custom Tattoos',
+    desc: 'Unique, one-of-a-kind tattoo designs created around your ideas, story, and personal style.',
+    img: img1,
   },
   {
     name: 'Fine Line',
-    desc: 'Delicate single-needle linework — minimalist florals, script, and micro-tattoos.',
-    img: 'https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?q=80&w=900&auto=format&fit=crop',
+    desc: 'Delicate and precise tattoo work featuring clean lines, minimalist designs, florals, scripts, and intricate details.',
+    img: img2,
   },
   {
-    name: 'Blackwork & Dotwork',
-    desc: ' Bold graphic blackwork, geometric patterns, and stippled dotwork shading.',
-    img: 'https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?q=80&w=900&auto=format&fit=crop',
+    name: 'Cover-Up Tattoos',
+    desc: 'Transform unwanted or old tattoos with creative cover-up designs that blend existing ink into a fresh new piece.',
+    img: img3,
   },
   {
-    name: 'Cover Up',
-    desc: ' Full reconstruction of old, faded, or unwanted tattoos into new, deliberate pieces.',
-    img: 'https://images.unsplash.com/photo-1552693673-1bf958298935?q=80&w=900&auto=format&fit=crop',
+    name: 'Tattoo Touch-Up',
+    desc: 'Restore faded, blurred, or worn tattoos with refreshed colors, sharper lines, and improved details.',
+    img: img4,
   },
   {
-    name: 'Touch-Ups & Restoration',
-    desc: ' Color refresh and line restoration for tattoos that have faded over time.',
-    img: 'https://images.unsplash.com/photo-1565058379802-bbe93b2f703a?q=80&w=900&auto=format&fit=crop',
+    name: 'Piercing',
+    desc: 'Professional body piercing with a focus on precision, hygiene, proper placement, and a comfortable experience.',
+    img: img5,
   },
   {
-    name: 'Custom Illustration',
-    desc: 'Original concept design built around your reference, story, and placement.',
-    img: 'https://images.unsplash.com/photo-1542728928-1413d1894ed1?q=80&w=900&auto=format&fit=crop',
+    name: 'Tattoo Consultation',
+    desc: 'Discuss your tattoo idea, design, size, placement, and style with guidance to create a tattoo that feels uniquely yours.',
+    img: img6,
   },
 ];
 

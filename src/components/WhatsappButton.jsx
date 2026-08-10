@@ -1,5 +1,5 @@
-const WHATSAPP_NUMBER = '15551234567';
-const WHATSAPP_MESSAGE = "Hi Obscura Ink, I'd like to book a consultation.";
+const WHATSAPP_NUMBER = '9607009494';
+const WHATSAPP_MESSAGE = "Hi InkFly Tattoo, I'd like to book a consultation.";
 
 function WhatsappButton() {
   const href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(

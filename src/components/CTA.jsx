@@ -83,7 +83,7 @@ function CTA() {
               Book Consultation
             </button>
             <a
-              href="https://wa.me/15551234567"
+              href="https://wa.me/9607009494?text=Hi%20InkFly%20Tattoo,%20I'd%20like%20to%20book%20a%20consultation."
               target="_blank"
               rel="noreferrer"
               className="outlinebtn"

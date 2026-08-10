@@ -11,32 +11,32 @@ function Piercing() {
   const piercingData = [
     {
       title: "Ear Piercing",
-      price: "From ₹1,200",
+      // price: "From ₹1,200",
       desc: "Lobe, helix, tragus, conch, and industrial — needle piercing only, no piercing guns.",
     },
     {
       title: "Nose Piercing",
-      price: "From ₹1,000",
+      // price: "From ₹1,000",
       desc: "Nostril and septum piercing with titanium or surgical steel starter jewelry.",
     },
     {
       title: "Navel Piercing",
-      price: "From ₹1,400",
+      // price: "From ₹1,400",
       desc: "Standard or floating navel piercing, sized and placed to your anatomy.",
     },
     {
       title: "Eyebrow Piercing",
-      price: "From ₹1,200",
+      // price: "From ₹1,200",
       desc: "Vertical or horizontal placement, marked and confirmed before piercing.",
     },
     {
       title: "Lip & Oral",
-      price: "From ₹1,300",
+      // price: "From ₹1,300",
       desc: "Labret, monroe, and medusa piercings using flat-back jewelry for comfort.",
     },
     {
       title: "Surface & Dermal",
-      price: "From ₹1,800",
+      // price: "From ₹1,800",
       desc: "Flat surface anchors for collarbone, nape, and hip placements.",
     },
   ];
