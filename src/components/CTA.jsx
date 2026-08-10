@@ -43,7 +43,7 @@ function CTA() {
     formDatab.append("Date", date);
 
     fetch(
-      "https://script.google.com/macros/s/AKfycbyBQLXvX8X_lKeLvymma3N6BE4mEWKf4bTV8253sXMtxg55RDpE7JFupFWEwpH4zSY7/exec",
+      "https://script.google.com/macros/s/AKfycbyJeSy8LU5nii5kWq3ET4IWYfLZiKV-GoQgbKlYSwHqKHi8b6GQac90-gDuCkMo8jj0AA/exec",
       {
         method: "POST",
         body: formDatab,
