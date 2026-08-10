@@ -5,7 +5,7 @@ function Studio() {
   const studioInfo = [
     {
       title: "Studio Hours",
-      value: "Tue - Sat, 11am - 8pm",
+      value: "Tue - Sat, 10am - 9pm",
     },
     {
       title: "Booking",
