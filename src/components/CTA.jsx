@@ -69,7 +69,7 @@ function CTA() {
           service: "",
           tattooStyle: "",
           tattooDescription: "",
-          enquiryType: "",
+          enquiryType: "landing page",
           budget: ""
         });
       }
