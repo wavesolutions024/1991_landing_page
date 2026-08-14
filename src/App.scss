@@ -407,3 +407,11 @@ h4 {
     opacity: 1 !important;
   }
 }
+
+.form-group{
+   width: 100%;
+   display: grid;
+  grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 1fr;
+   gap: var(--unit);
+}

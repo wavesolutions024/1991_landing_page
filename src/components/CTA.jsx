@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import useReveal from "../hooks/useReveal.js";
 import "../styles/cta.scss";
+import axios from "axios";
 
 function CTA() {
   const ref = useReveal();
@@ -8,6 +9,17 @@ function CTA() {
   const modalRef = useRef(null);
   const firstInputRef = useRef(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    mobileNo: "",
+    gender: "",
+    service: "",
+    tattooStyle: "",
+    tattooDescription: "",
+    enquiryType: "",
+    budget: "",
+  });
 
   useEffect(() => {
     function onKey(e) {
@@ -29,39 +41,49 @@ function CTA() {
     return () => window.removeEventListener("openConsultationModal", handler);
   }, []);
 
-  function Submit(e) {
-    e.preventDefault();
+  const handleChange = (e) => {
+    const { name, value } = e.target;
 
-    setIsSubmitting(true); // Set submitting state to true
+    setForm((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
 
-    const formEle = document.querySelector("form");
-    const formDatab = new FormData(formEle);
-    const getDate = new Date();
+  const handleSubmit = async (e) => {
+    try {
+      setIsSubmitting(true)
+      e.preventDefault();
 
-    const date = getDate.toDateString();
+      const response = await axios.post(
+        `https://backend.1991tattoos.com/api/enquiry/addOutEnquiry?franchiesCode=2`,
+        form,
+      );
 
-    formDatab.append("Date", date);
+      if (response.status === 200) {
+        setForm({
+          name: "",
+          email: "",
+          mobileNo: "",
+          gender: "",
+          service: "",
+          tattooStyle: "",
+          tattooDescription: "",
+          enquiryType: "",
+          budget: ""
+        });
+      }
 
-    fetch(
-      "https://script.google.com/macros/s/AKfycbyJeSy8LU5nii5kWq3ET4IWYfLZiKV-GoQgbKlYSwHqKHi8b6GQac90-gDuCkMo8jj0AA/exec",
-      {
-        method: "POST",
-        body: formDatab,
-      },
-    )
-      .then((res) => res.text())
-      .then((data) => {
-        alert("Form Submitting Successfully")
-        setIsSubmitting(false); // Reset submitting state
-       setModalOpen(false)
-        formEle.reset(); // Reset the form
-      })
-      .catch((error) => {
-        console.error("FULL ERROR:", error);
-        console.error(error.message);
-        setIsSubmitting(false);
-      });
-  }
+      alert("form submitted successfully");
+      setModalOpen(false)
+    } catch (error) {
+      console.log(error);
+    }finally{
+       setIsSubmitting(false)
+    }
+  };
+
+
 
   return (
     <section className="cta-banner parent" id="cta">
@@ -112,31 +134,107 @@ function CTA() {
               ×
             </button>
             <h3 className="modal__title">Book Consultation</h3>
-            <form className="modal__form" onSubmit={Submit}>
+            <form className="modal__form" onSubmit={handleSubmit}>
               <label>
                 Your name
-                <input required name="Name" type="text" />
+                <input
+                  required
+                  name="name"
+                  onChange={handleChange}
+                  value={form.name}
+                  type="text"
+                  placeholder="Enter Your Name"
+                />
               </label>
+              <div class="form-group">
+                <label>
+                  Your Contact Number
+                  <input
+                    required
+                    name="mobileNo"
+                    onChange={handleChange}
+                    value={form.mobileNo}
+                    type="text"
+                    placeholder="Enter Contact Number"
+                  />
+                </label>
+
+                <label>
+                  Email
+                  <input
+                    required
+                    name="email"
+                    onChange={handleChange}
+                    value={form.email}
+                    type="email"
+                    placeholder="Enter Your Email"
+                  />
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label>
+                  Select Gender
+                  <select
+                    name="gender"
+                    onChange={handleChange}
+                    value={form.gender}
+                    id=""
+                  >
+                    <option value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </label>
+                <label>
+                  Select Service
+                  <select
+                    name="service"
+                    onChange={handleChange}
+                    value={form.service}
+                    id=""
+                  >
+                    <option value="">Select Service</option>
+                    <option value="Permanent Tattoo">Permanent Tattoo</option>
+                    <option value="Temporary Tattoo">Temporary Tattoo</option>
+                    <option value="Peircing">Peircing</option>
+                  </select>
+                </label>
+              </div>
+              <div class="form-group">
+                <label>
+                  Tattoo Style
+                  <input
+                    required
+                    name="tattooStyle"
+                    onChange={handleChange}
+                    value={form.tattooStyle}
+                    type="text"
+                    placeholder="Enter Tattoo Style"
+                  />
+                </label>
+                <label>
+                  Tattoo Budget
+                  <input
+                    required
+                    name="budget"
+                    onChange={handleChange}
+                    value={form.budget}
+                    type="text"
+                    placeholder="Enter Tattoo Budget"
+                  />
+                </label>
+              </div>
               <label>
-                Your Contact Number
-                <input required name="Contact" type="text" />
-              </label>
-              <label>
-                Email
-                <input required name="Email" type="email" />
-              </label>
-              <label>
-                Select Service
-                <select name="Service" id="">
-                  <option value="">Select Service</option>
-                  <option value="Permanent Tattoo">Permanent Tattoo</option>
-                  <option value="Temporary Tattoo">Temporary Tattoo</option>
-                  <option value="Peircing">Peircing</option>
-                </select>
-              </label>
-              <label>
-                Message
-                <textarea name="Message" rows="4" />
+                Tattoo Description
+                <textarea
+                  name="tattooDescription"
+                  onChange={handleChange}
+                  value={form.tattooDescription}
+                  placeholder="Enter Your Tattoo Description"
+                  rows="4"
+                />
               </label>
               <div className="modal__actions">
                 <button
