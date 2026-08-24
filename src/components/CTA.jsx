@@ -18,7 +18,6 @@ function CTA() {
     tattooStyle: "",
     tattooDescription: "",
     enquiryType: "landing page",
-    budget: "",
   });
 
   useEffect(() => {
@@ -69,8 +68,8 @@ function CTA() {
           service: "",
           tattooStyle: "",
           tattooDescription: "",
-          enquiryType: "",
-          budget: ""
+          
+          
         });
       }
 
@@ -162,7 +161,6 @@ function CTA() {
                 <label>
                   Email
                   <input
-                    required
                     name="email"
                     onChange={handleChange}
                     value={form.email}
@@ -202,11 +200,11 @@ function CTA() {
                   </select>
                 </label>
               </div>
-              <div class="form-group">
+              {/* <div class="form-group"> */}
                 <label>
                   Tattoo Style
                   <input
-                    required
+                    
                     name="tattooStyle"
                     onChange={handleChange}
                     value={form.tattooStyle}
@@ -214,7 +212,7 @@ function CTA() {
                     placeholder="Enter Tattoo Style"
                   />
                 </label>
-                <label>
+                {/* <label>
                   Tattoo Budget
                   <input
                     required
@@ -224,8 +222,8 @@ function CTA() {
                     type="text"
                     placeholder="Enter Tattoo Budget"
                   />
-                </label>
-              </div>
+                </label> */}
+              {/* </div> */}
               <label>
                 Tattoo Description
                 <textarea
