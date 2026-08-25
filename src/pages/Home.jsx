@@ -11,6 +11,7 @@ import FAQ from '../components/FAQ.jsx';
 import CTA from '../components/CTA.jsx';
 import Footer from '../components/Footer.jsx';
 import WhatsappButton from '../components/WhatsappButton.jsx';
+import CallButton from "../components/CallButton.jsx";
 
 function Home() {
   return (
@@ -30,6 +31,7 @@ function Home() {
       </main>
       <Footer />
       <WhatsappButton />
+      <CallButton/>
     </>
   );
 }
