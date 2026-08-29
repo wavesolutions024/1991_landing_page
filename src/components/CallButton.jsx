@@ -1,5 +1,5 @@
 function CallButton() {
-  const PHONE_NUMBER = "9607009494";
+  const PHONE_NUMBER = "+919607009494";
 
   return (
     <a
