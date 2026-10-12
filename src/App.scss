@@ -418,3 +418,131 @@ h4 {
 grid-template-rows: 1fr;
    gap: var(--unit);
 }
+
+
+.call-fab {
+  position: fixed;
+  right: 28px;
+  bottom: 98px;
+
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: var(--gold);
+  color: var(--black);
+
+  box-shadow: var(--shadow-gold);
+
+  z-index: 400;
+
+  transition: var(--transition);
+
+  svg {
+    width: 27px;
+    height: 27px;
+  }
+
+  &:hover {
+    transform: translateY(-4px) scale(1.05);
+
+    background: var(--gold-hover);
+
+    box-shadow:
+      0 16px 34px rgba(212, 175, 55, 0.28);
+  }
+
+  &:active {
+    transform: translateY(-1px) scale(1.02);
+  }
+}
+
+
+.call-fab::before {
+  content: '';
+
+  position: absolute;
+  inset: -5px;
+
+  border-radius: 50%;
+
+  border: 1px solid var(--gold-soft);
+
+  animation: callPulse 2.2s ease-out infinite;
+
+  pointer-events: none;
+}
+
+@keyframes callPulse {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.8;
+  }
+
+  70% {
+    transform: scale(1.35);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1.35);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .call-fab {
+    right: 18px;
+    bottom: 82px;
+
+    width: 52px;
+    height: 52px;
+
+    svg {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  .whatsapp-fab {
+    right: 18px;
+    bottom: 18px;
+
+    width: 52px;
+    height: 52px;
+
+    svg {
+      width: 27px;
+      height: 27px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .call-fab {
+    right: 15px;
+    bottom: 78px;
+
+    width: 50px;
+    height: 50px;
+  }
+
+  .whatsapp-fab {
+    right: 15px;
+    bottom: 15px;
+
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .call-fab::before {
+    animation: none;
+  }
+}
