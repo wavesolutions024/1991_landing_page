@@ -2,6 +2,7 @@ import { useState } from "react";
 import useReveal from "../hooks/useReveal.js";
 import "../styles/hero.scss";
 import axios from "axios";
+import bg from "../assets/bg.jpg";
 
 const promoItems = [
   { icon: "✦", title: "50% off", label: "TATTOO" },
@@ -63,7 +64,7 @@ function Hero() {
       <div className="hero__media">
         <img
           className="bg-img-cover"
-          src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1400&q=80"
+          src={bg}
           alt="Close-up of a tattooed shoulder and neck"
         />
         <div className="hero__overlay" />
