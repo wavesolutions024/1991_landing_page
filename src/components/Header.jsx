@@ -40,7 +40,7 @@ function Header() {
               {link.label}
             </a>
           ))}
-          <a
+          {/* <a
             href="#cta"
             className="primarybtn header__nav-cta"
             onClick={(e) => {
@@ -51,7 +51,7 @@ function Header() {
             aria-haspopup="dialog"
           >
             Book Consultation
-          </a>
+          </a> */}
         </nav>
 
         <button
