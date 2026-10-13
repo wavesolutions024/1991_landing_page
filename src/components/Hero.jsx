@@ -5,13 +5,13 @@ import axios from "axios";
 import bg from "../assets/bg.jpg";
 
 const promoItems = [
-  { icon: "✦", title: "50% off", label: "TATTOO" },
-  { icon: "◌", title: "20% off", label: "PIERCING" },
+  { icon: "✦", title: "40% off", label: "TATTOO" },
+  { icon: "◌", title: "30% off", label: "PIERCING" },
 ];
 
 function Hero() {
   const eyebrowRef = useReveal();
-  const headingRef = useReveal();
+  const headingRef = useReveal(); 
   const ctaRef = useReveal();
   const badgesRef = useReveal();
   const bookingRef = useReveal();
