@@ -1,5 +1,5 @@
-import useReveal from '../hooks/useReveal.js';
-import '../styles/gallery.scss';
+import useReveal from "../hooks/useReveal.js";
+import "../styles/gallery.scss";
 import img1 from "../assets/imag1.png";
 import img2 from "../assets/image2.png";
 import img3 from "../assets/image3.png";
@@ -9,7 +9,6 @@ import img6 from "../assets/image6.png";
 import img7 from "../assets/image7.png";
 import img8 from "../assets/image8.png";
 import img9 from "../assets/image9.png";
-
 
 const GALLERY_ITEMS = [
   {
@@ -39,11 +38,13 @@ function Gallery() {
     <section className="gallery parent" id="gallery">
       <div className="cont">
         <div ref={headRef} className="section-head reveal">
-          <p className="eyebrow">GALLERY</p>
-          <h2 className="section-title">Recent work.</h2>
+          <p className="eyebrow">TATTOO GALLERY</p>
+          <h2 className="section-title">Explore our tattoo work.</h2>
           <p className="section-subtitle">
-            A small selection from the studio floor — full portfolio
-            available on request during your consultation.
+            Discover custom tattoo designs created at Inkfly Tattoo in Wakad,
+            Pune. Explore black-and-grey realism, fine-line tattoos, minimalist
+            artwork, and detailed cover-ups. Find inspiration for your next
+            tattoo and discuss your ideas with our artist during a consultation.
           </p>
         </div>
       </div>
@@ -62,7 +63,7 @@ function GalleryItem({ item, index }) {
   return (
     <figure
       ref={ref}
-      className={`gallery__item ${item.tall ? 'gallery__item--tall' : ''} reveal-fade reveal-delay-${(index % 4) + 1}`}
+      className={`gallery__item ${item.tall ? "gallery__item--tall" : ""} reveal-fade reveal-delay-${(index % 4) + 1}`}
     >
       <img
         className="bg-img-cover"

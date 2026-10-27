@@ -1,27 +1,44 @@
-import useReveal from '../hooks/useReveal.js';
-import '../styles/reviews.scss';
+import useReveal from "../hooks/useReveal.js";
+import "../styles/reviews.scss";
 
 const REVIEWS = [
   {
-    name: '— R. MALHOTRA',
-    role: 'COVER-UP CLIENT',
+    name: "— R. MALHOTRA",
+    role: "COVER-UP CLIENT",
     quote:
-      'Booked a consultation expecting a sales pitch, got an actual design conversation instead. The cover-up completely erased fifteen years of regret.',
-    avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop',
+      "The consultation was thoughtful, and the artist took time to understand what I wanted to cover up. We discussed the design carefully, and I’m really happy with the direction of the final artwork.",
+    avatar:
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop",
   },
   {
-    name: '— A. FERNANDES',
-    role: 'PIERCING CLIENT',
+    name: "— A. FERNANDES",
+    role: "PIERCING CLIENT",
     quote:
-      'My septum was pierced by someone who explained every step before doing it. No piercing gun, no rush, healed clean in six weeks.',
-    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop',
+      "The piercing process was explained clearly from start to finish. I appreciated the attention to hygiene, the patience in answering my questions, and the aftercare instructions.",
   },
   {
-    name: '— S. IYER',
-    role: 'REALISM CLIENT',
+    name: "— S. IYER",
+    role: "REALISM CLIENT",
     quote:
-      'The realism work on my forearm looks more like the reference photo than I thought possible. Worth every appointment it took to get booked.',
-    avatar: 'https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=200&auto=format&fit=crop',
+      "I wanted a detailed black-and-grey tattoo based on a reference photo. The design discussion helped me get clear on what I wanted, and I loved seeing the artwork come together.",
+  },
+  {
+    name: "— A. DESHMUKH",
+    role: "FINE-LINE TATTOO CLIENT",
+    quote:
+      "I wanted something minimal with a personal meaning. The design was discussed in detail, and the final concept felt true to what I had imagined.",
+  },
+  {
+    name: "— K. SHAH",
+    role: "CUSTOM TATTOO CLIENT",
+    quote:
+      "I came in with a few reference images and a rough idea. The consultation helped bring everything together into a design that suited my style and preferred placement.",
+  },
+  {
+    name: "— P. JOSHI",
+    role: "TATTOO CLIENT",
+    quote:
+      "The team took time to discuss the size, placement, and design before getting started. I appreciated being able to ask questions and understand the process beforehand.",
   },
 ];
 
@@ -33,9 +50,7 @@ function Reviews() {
       <div className="cont">
         <div ref={headRef} className="section-head section-head--center reveal">
           <p className="eyebrow">CLIENT WORDS</p>
-          <h2 className="section-title">
-            From people in the chair.
-          </h2>
+          <h2 className="section-title">What Clients Say About Inkfly Tattoo</h2>
         </div>
 
         <div className="reviews__grid">
@@ -51,7 +66,10 @@ function Reviews() {
 function ReviewCard({ review, index }) {
   const ref = useReveal();
   return (
-    <article ref={ref} className={`review-card reveal reveal-delay-${index + 1}`}>
+    <article
+      ref={ref}
+      className={`review-card reveal reveal-delay-${index + 1}`}
+    >
       <div className="review-card__stars" aria-label="5 out of 5 stars">
         {Array.from({ length: 5 }).map((_, i) => (
           <svg key={i} viewBox="0 0 24 24" fill="currentColor">

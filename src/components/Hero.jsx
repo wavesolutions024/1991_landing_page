@@ -11,7 +11,7 @@ const promoItems = [
 
 function Hero() {
   const eyebrowRef = useReveal();
-  const headingRef = useReveal(); 
+  const headingRef = useReveal();
   const ctaRef = useReveal();
   const badgesRef = useReveal();
   const bookingRef = useReveal();
@@ -21,7 +21,7 @@ function Hero() {
     service: "",
   });
 
-   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const handleChange = (e) => {
     const { name, value } = e.target;
 
@@ -73,19 +73,30 @@ function Hero() {
       <div className="cont hero__inner">
         <div className="hero__content">
           <p ref={eyebrowRef} className="eyebrow hero__eyebrow reveal">
-            Private Studio · By Appointment Only
+            Custom Tattoos. Realistic Art. Your Story.
           </p>
 
           <p className="hero__lead reveal reveal-delay-1">
             Art That Stays With You
           </p>
 
-          <h1 ref={headingRef} className="hero__heading reveal reveal-delay-2">
-            Thinking About
-            <span>Getting Inked?</span>
+          <h1
+            ref={headingRef}
+            style={{ lineHeight: "75px", letterSpacing: "1px" }}
+            className="hero__heading reveal reveal-delay-2"
+          >
+            {/* Thinking About
+            <span>Getting Inked?</span> */}
+            Best Tattoo <span>Studio in Wakad</span>
           </h1>
 
-          <p style={{paddingTop:"20px"}}>Don&apos;t Think. Get Inked.</p>
+          <p style={{ paddingTop: "20px" }}>
+            Get your next tattoo designed by a professional tattoo artist at
+            &nbsp;
+            <span style={{ color: "var(--gold)" }}>Inkfly Tattoo, Wakad</span>,
+            Pune. From fine-line and minimalist designs to realistic portraits
+            and custom tattoos, bring your idea to life.
+          </p>
 
           <div ref={badgesRef} className="hero__promo reveal reveal-delay-4">
             {promoItems.map((item) => (
@@ -105,10 +116,10 @@ function Hero() {
               href="https://wa.me/919607009494"
               className="primarybtn"
             >
-              WHATSAPP NOW
+              Book on WhatsApp
             </a>
-            <a href="#gallery" rel="noreferrer" className="outlinebtn">
-              VIEW OUR WORK
+            <a href="tel:919607009494"  rel="noreferrer" className="outlinebtn">
+              Call Now
             </a>
           </div>
         </div>

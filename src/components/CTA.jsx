@@ -51,7 +51,7 @@ function CTA() {
 
   const handleSubmit = async (e) => {
     try {
-      setIsSubmitting(true)
+      setIsSubmitting(true);
       e.preventDefault();
 
       const response = await axios.post(
@@ -68,31 +68,32 @@ function CTA() {
           service: "",
           tattooStyle: "",
           tattooDescription: "",
-          
-          
         });
       }
 
       alert("form submitted successfully");
-      setModalOpen(false)
+      setModalOpen(false);
     } catch (error) {
       console.log(error);
-    }finally{
-       setIsSubmitting(false)
+    } finally {
+      setIsSubmitting(false);
     }
   };
-
-
 
   return (
     <section className="cta-banner parent" id="cta">
       <div className="cont">
         <div ref={ref} className="cta-banner__inner reveal">
-          <p className="eyebrow">Limited Availability</p>
-          <h2 className="cta-banner__heading">Ready for your next tattoo?</h2>
+          <p className="eyebrow">BOOK YOUR CONSULTATION</p>
+          <h2 className="cta-banner__heading">
+            {" "}
+            Ready for Your Next Custom Tattoo?
+          </h2>
           <p className="cta-banner__sub">
-            Consultations are held every Tuesday through Saturday. Tell us what
-            you have in mind and we&apos;ll find the right time to start.
+            Looking for a professional tattoo artist in Wakad, Pune? Share your
+            idea with <span style={{color:"var(--gold)"}}>Inkfly Tattoo</span> and let’s plan a design that reflects your
+            style. Contact us to discuss your tattoo design, pricing, and
+            appointment availability.
           </p>
           <div className="cta-banner__actions">
             <button
@@ -201,18 +202,17 @@ function CTA() {
                 </label>
               </div>
               {/* <div class="form-group"> */}
-                <label>
-                  Tattoo Style
-                  <input
-                    
-                    name="tattooStyle"
-                    onChange={handleChange}
-                    value={form.tattooStyle}
-                    type="text"
-                    placeholder="Enter Tattoo Style"
-                  />
-                </label>
-                {/* <label>
+              <label>
+                Tattoo Style
+                <input
+                  name="tattooStyle"
+                  onChange={handleChange}
+                  value={form.tattooStyle}
+                  type="text"
+                  placeholder="Enter Tattoo Style"
+                />
+              </label>
+              {/* <label>
                   Tattoo Budget
                   <input
                     required

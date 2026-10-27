@@ -1,10 +1,6 @@
-import useReveal from '../hooks/useReveal.js';
+import useReveal from "../hooks/useReveal.js";
 import "../styles/piercing.scss";
-import {
-  FiShield,
-  FiCheckCircle,
-  FiHeart,
-} from "react-icons/fi";
+import { FiShield, FiCheckCircle, FiHeart } from "react-icons/fi";
 import { LuBadgeCheck } from "react-icons/lu";
 
 function Piercing() {
@@ -67,35 +63,33 @@ function Piercing() {
   return (
     <section className="piercing parent" id="piercing">
       <div className="cont">
-
         <div className="piercing__head">
           <span className="eyebrow">BODY PIERCING</span>
 
           <h2 className="section-title">
-            Precision piercing, the same
+            Professional <span>body piercing</span>
             <br />
-            clinical standard.
+            <span>in Wakad,</span> Pune.
           </h2>
 
           <p className="section-subtitle">
-            Our piercers work from the same sterile,
-            appointment-only rooms as our tattoo artists —
-            implant-grade jewelry only, single-use needles,
-            and a full aftercare walkthrough with every piercing.
+            Looking for body piercing in Wakad, Pune? Inkfly Tattoo offers
+            personalised piercing services with a focus on precision, hygiene,
+            and comfort. Our piercing process includes sterile, single-use
+            needles, suitable quality jewelry, and clear aftercare guidance to
+            help you care for your new piercing.
           </p>
         </div>
 
         <div className="piercing__grid">
           {piercingData.map((item, index) => (
             <div className="piercing__card" key={index}>
-
               <div className="piercing__top">
                 <h3>{item.title}</h3>
                 <span>{item.price}</span>
               </div>
 
               <p>{item.desc}</p>
-
             </div>
           ))}
         </div>
@@ -103,23 +97,16 @@ function Piercing() {
         <div className="ink-divider"></div>
 
         <div className="piercing__features">
-
           {features.map((item, index) => (
             <div className="feature" key={index}>
-
-              <div className="feature__icon">
-                {item.icon}
-              </div>
+              <div className="feature__icon">{item.icon}</div>
 
               <h4>{item.title}</h4>
 
               <p>{item.desc}</p>
-
             </div>
           ))}
-
         </div>
-
       </div>
     </section>
   );

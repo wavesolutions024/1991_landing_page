@@ -1,5 +1,5 @@
-import useReveal from '../hooks/useReveal.js';
-import '../styles/services.scss';
+import useReveal from "../hooks/useReveal.js";
+import "../styles/services.scss";
 import img1 from "../assets/imag1.png";
 import img2 from "../assets/image6.png";
 import img3 from "../assets/cover-up.jpg";
@@ -9,33 +9,33 @@ import img6 from "../assets/consultation.webp";
 
 const SERVICES = [
   {
-    name: 'Custom Tattoos',
-    desc: 'Unique, one-of-a-kind tattoo designs created around your ideas, story, and personal style.',
+    name: "Custom Tattoos",
+    desc: "Unique, one-of-a-kind tattoo designs created around your ideas, story, and personal style.",
     img: img1,
   },
   {
-    name: 'Fine Line',
-    desc: 'Delicate and precise tattoo work featuring clean lines, minimalist designs, florals, scripts, and intricate details.',
+    name: "Fine Line",
+    desc: "Delicate and precise tattoo work featuring clean lines, minimalist designs, florals, scripts, and intricate details.",
     img: img2,
   },
   {
-    name: 'Cover-Up Tattoos',
-    desc: 'Transform unwanted or old tattoos with creative cover-up designs that blend existing ink into a fresh new piece.',
+    name: "Cover-Up Tattoos",
+    desc: "Transform unwanted or old tattoos with creative cover-up designs that blend existing ink into a fresh new piece.",
     img: img3,
   },
   {
-    name: 'Tattoo Touch-Up',
-    desc: 'Restore faded, blurred, or worn tattoos with refreshed colors, sharper lines, and improved details.',
+    name: "Tattoo Touch-Up",
+    desc: "Restore faded, blurred, or worn tattoos with refreshed colors, sharper lines, and improved details.",
     img: img4,
   },
   {
-    name: 'Piercing',
-    desc: 'Professional body piercing with a focus on precision, hygiene, proper placement, and a comfortable experience.',
+    name: "Piercing",
+    desc: "Professional body piercing with a focus on precision, hygiene, proper placement, and a comfortable experience.",
     img: img5,
   },
   {
-    name: 'Tattoo Consultation',
-    desc: 'Discuss your tattoo idea, design, size, placement, and style with guidance to create a tattoo that feels uniquely yours.',
+    name: "Tattoo Consultation",
+    desc: "Discuss your tattoo idea, design, size, placement, and style with guidance to create a tattoo that feels uniquely yours.",
     img: img6,
   },
 ];
@@ -49,12 +49,10 @@ function Services() {
         <div ref={headRef} className="section-head reveal">
           <p className="eyebrow">SERVICES</p>
           <h2 className="section-title">
-            Tattoo work, done <span> deliberately.</span>
+            Custom Tattoo Services <span> in Wakad,</span> Pune
           </h2>
           <p className="section-subtitle">
-            From a single fine line to a full sleeve reconstruction,
-            each service below is scoped in a free consultation before
-            anything touches skin.
+            From fine-line tattoos to detailed black-and-grey realism and complete sleeve designs, Inkfly Tattoo offers personalised tattoo services tailored to your style and vision. Explore our tattoo styles, discuss your ideas with our artist, and get a design created specifically for you.
           </p>
         </div>
 
