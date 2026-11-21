@@ -19,6 +19,7 @@ function Hero() {
     name: "",
     mobileNo: "",
     service: "",
+    enquiryType: "landing page",
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
