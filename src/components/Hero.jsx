@@ -5,8 +5,9 @@ import axios from "axios";
 import bg from "../assets/bg.jpg";
 
 const promoItems = [
-  { icon: "✦", title: "40% off", label: "TATTOO" },
-  { icon: "◌", title: "30% off", label: "PIERCING" },
+  { icon: "✦", title: "49% off", label: "Half Sleeves Tattoo" },
+    { icon: "✦", title: "59% off", label: "Full Sleeves Tattoo" },
+  { icon: "◌", title: "25% off", label: "PIERCING" },
 ];
 
 function Hero() {
