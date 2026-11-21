@@ -168,8 +168,8 @@ function Hero() {
                 <option value="" disabled>
                   Select Service
                 </option>
-                <option value="tattoo">Permanent Tattoo</option>
-                <option value="tattoo">Tattoo Removal</option>
+                <option value="permanent tattoo">Permanent Tattoo</option>
+                <option value="removal tattoo">Tattoo Removal</option>
                 <option value="piercing">Piercing</option>
                 <option value="cover-up">Cover-Up</option>
               </select>
